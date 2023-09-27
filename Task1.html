@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .sticky-top {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            z-index: 1020;
+        }
+
+        .full-height {
+            height: 100vh;
+        }
+
+        .center-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .vertical-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        .custom-nav {
+            background-color: #c0c2c4; 
+            padding: 10px; 
+        }
+
+        .custom-nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .custom-nav li {
+            margin-right: 20px;
+        }
+
+        .custom-nav a {
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row bg-info text-white sticky-top">
+            <div class="col center-title">
+                <h1 class="p4">Ethnus layout</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col custom-nav">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">MENU</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="col custom-nav">
+                <ul>
+                    <li><a href="#">SIGNUP</a></li>
+                    <li><a href="#">LOGIN</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row full-height">
+            <div class="col-md-9">
+                <div class="p-4">
+                    <p class="text-center">Write your content here</p>
+                </div>
+            </div>
+            <div class="col-md-3 bg-secondary text-white">
+                <div class="p-4">
+                    <p class="text-center">This is</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
